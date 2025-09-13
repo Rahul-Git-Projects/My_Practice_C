@@ -1,8 +1,12 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main(){
-    short int a = 3,b;
-    b = ++a;
-    printf("%d,%d",a,b);
+        enum days{Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday};
+        for (enum days day;day <= 6;++day){
+                if (day == Saturday || day == Sunday){
+                        break;
+        }
+                printf("Dont mind me just chilling in hell*cries*");
+
+        }
 }
