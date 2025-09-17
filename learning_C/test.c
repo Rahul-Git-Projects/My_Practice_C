@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-int main(){
-        enum days{Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday};
-        for (enum days day;day <= 6;++day){
-                if (day == Saturday || day == Sunday){
-                        break;
-        }
-                printf("Dont mind me just chilling in hell*cries*");
-
+int main()
+{
+        int array[10] = 3;
+        for (int i = 0; i < 10; i++)
+        {
+                printf("%d", array[i]);
         }
 }
