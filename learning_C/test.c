@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-        
-        int array1[10] = {0};
-        for (int i = 0; i < 10; i++)
-        {
-                printf("%d\t", array1[i]);
-        }
-        printf("\n %d", sizeof(array1));
+        char string1[] = "Rahul";
+        int length = 0;
+        for (int i = 0; string1[i] != '\0'; i++)
+                length++;
+        printf("%d", length);
 }
