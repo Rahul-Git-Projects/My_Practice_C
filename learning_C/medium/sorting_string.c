@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void bubble_sort(char user_string[])
+void sorting_string(char user_string[])
 {
     char least = '~';
     int store;
@@ -29,6 +29,6 @@ void bubble_sort(char user_string[])
 int main(void)
 {
     char words[] = "ballers";
-    bubble_sort(words);
+    sorting_string(words);
     return 0;
 }
