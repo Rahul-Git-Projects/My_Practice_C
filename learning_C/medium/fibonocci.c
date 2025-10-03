@@ -1,22 +1,31 @@
 #include <stdio.h>
 
-void fibonocci(unsigned num)
+void fibonocci(int n)
 {
-    unsigned term = 1;
-    unsigned prev_num = 1;
-    unsigned prev_prev_num = 0;
+    int prevprevnum = 1, prevnum = 1, num = prevprevnum + prevnum;
+    if (n == 1)
+        printf("1");
+    else if (n == 2)
+        printf("1 1");
 
-    for (int i = 0; i < num; i++)
+    if (n > 2)
     {
-        printf("%u ", term);
-        term = prev_num + prev_prev_num;
-        prev_prev_num = prev_num;
-        prev_num = term;
+        printf("1 1 ");
+        for (int i = 3; i <= n; i++)
+        {
+            printf("%d ", num);
+            prevprevnum = prevnum;
+            prevnum = num;
+            num = prevnum + prevprevnum;
+        }
     }
 }
 
 int main(void)
 {
-    fibonocci(6);
+    int user_input;
+    printf("Enter a number: ");
+    scanf("%d", &user_input);
+    fibonocci(user_input);
     return 0;
 }
