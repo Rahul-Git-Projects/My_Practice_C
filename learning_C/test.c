@@ -1,27 +1,17 @@
 #include <stdio.h>
 
-void update(int *a, int *b)
+struct Structures
 {
-
-    if (*a >= *b)
-    {
-        *b = *a - *b;
-        *a = 2 * (*a) - *b;
-    }
-    else
-    {
-        *b = *b - *a;
-        *a = *b + 2 * (*a);
-    }
-
-    return;
-}
+    int numbers;
+    char letters;
+};
 
 int main(void)
 {
-    int a, b;
-    scanf("%d\n%d", &a, &b);
+    struct Structures name1;
 
-    update(&a, &b);
-    printf("%d\n%d", a, b);
+    name1.numbers = 3;
+    name1.letters = 'k';
+
+    return 0;
 }
