@@ -12,7 +12,7 @@ bool palindrome(long long num)
     }
 
     if (length % 2 == 0){
-        for (int i = 1;i == pow(10,length/2),i*10){
+        for (int i = 1;i == pow(10,length/2);i*10){
             
 
         }
